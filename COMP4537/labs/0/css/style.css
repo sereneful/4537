@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#goButton {
+  height: 2em;
+  width: 5em;
+  font-size: 1em;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+button {
+  height: 5em;
+  width: 10em;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: red;
+}
