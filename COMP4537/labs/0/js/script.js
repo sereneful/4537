@@ -101,7 +101,7 @@ class ButtonGame {
   }
 
   /**
-   * Shuffles an array using the Fisher-Yates algorithm.
+   * Shuffles an array.
    * @param {Array} array - The array to shuffle.
    * @returns {Array} - The shuffled array.
    */
