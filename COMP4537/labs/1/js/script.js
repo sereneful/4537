@@ -21,7 +21,7 @@ const displayNotes = document.getElementById('display-notes');
  * @returns {Note[]} An array of Note objects loaded from localStorage.
  */
 function loadNotes() {
-    const savedNotes = JSON.parse(localStorage.getItem(localStorageKey)) || [];
+    const savedNotes = JSON.parse(localStorage.getItem(localStorageKey)) || []; 
     return savedNotes.map(note => new Note(note.content));
 }
 
@@ -108,7 +108,7 @@ function displayNotesInReader() {
     }
 }
 
-// Event listeners for adding notes and saving them every 2 seconds
+// Event listeners for adding notes and saving them every 2 seconds, determines whether it is writer.html or reader.html based on the presence of notesContainer or displayNotes.
 if (notesContainer) {
     document.getElementById('add-note').textContent = messages.addNote; // Use messages from user.js
     document.getElementById('add-note').addEventListener('click', addNewNote);
